@@ -1,0 +1,18 @@
+---
+layout: default
+title: My Blog
+---
+
+<h2>{{ page.title }}</h2>
+<p>News</p>
+<ul>
+　　　{% for post in site.posts %}
+　　　<!-- 　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      -->
+　　　<li>{{ post.date | date_to_string }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+　　　{% endfor %}
+</ul>
+
+<p>
+  <img src="http://ossweb-img.qq.com/images/lol/web201310/skin/big266000.jpg">
+</p>
